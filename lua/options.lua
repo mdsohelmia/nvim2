@@ -1,6 +1,5 @@
 vim.opt.relativenumber = true
 vim.opt.cursorline = true -- show the cursor line
-vim.opt.cursorcolumn = true -- show the cursor column
 vim.opt.mouse = "a" -- enable mouse
 vim.opt.clipboard = "unnamedplus" -- use system clipboard
 vim.opt.smartcase = true -- ignores case for search unless a capital is used in search
@@ -16,9 +15,7 @@ vim.opt.showmode = false
 vim.opt.numberwidth = 5 -- wider gutter
 vim.opt.linebreak = true -- don't break words on wrap
 vim.opt.smartindent = true
-vim.opt.completeopt = "menuone,noselect" -- nvim-cmp
--- vim.opt.completeopt = {"menuone", "longest", "preview"}
-vim.opt.signcolumn = "yes" -- always show the signcolumn
+vim.opt.completeopt = { "menuone", "longest", "preview" }
 vim.opt.termguicolors = true
 
 -- spelling
@@ -28,7 +25,7 @@ vim.opt.mousemodel = "popup"
 vim.opt.timeoutlen = 500
 
 -- Neovide settings
-vim.o.guifont = "Victor Mono Nerd Font:h11"
+vim.o.guifont = "Victor Mono Nerd Font:h14"
 -- vim.opt.guifontsize = 11
 vim.g.neovide_transparency = 0.9
 vim.g.neovide_fullscreen = true
@@ -46,15 +43,15 @@ vim.cmd([[autocmd InsertEnter * norm zz]])
 
 -- Give me some fenced codeblock goodness
 vim.g.markdown_fenced_languages = {
-  "html",
-  "javascript",
-  "javascriptreact",
-  "typescript",
-  "json",
-  "css",
-  "scss",
-  "lua",
-  "vim",
-  "bash",
-  "ts=typescript",
+	"html",
+	"javascript",
+	"javascriptreact",
+	"typescript",
+	"json",
+	"css",
+	"scss",
+	"lua",
+	"vim",
+	"bash",
+	"ts=typescript",
 }

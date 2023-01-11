@@ -11,6 +11,7 @@ require("ls")
 require("treesitter-settings")
 
 -- configure plugins
+
 require("cmp-settings")
 require("luaLine-settings")
 require("formatter-settings")
@@ -28,6 +29,8 @@ require("Comment-settings")
 require("presence-settings")
 require("dashboard-settings")
 require("undo-tree-settings")
+
+
 
 -- keymappings
 require("keymappings")
